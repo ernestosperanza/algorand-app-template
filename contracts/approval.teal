@@ -1,0 +1,37 @@
+#pragma version 6
+txn NumAppArgs
+int 0
+==
+bnz main_l2
+err
+main_l2:
+txn OnCompletion
+int NoOp
+==
+bnz main_l8
+txn OnCompletion
+int UpdateApplication
+==
+bnz main_l7
+txn OnCompletion
+int DeleteApplication
+==
+bnz main_l6
+err
+main_l6:
+txn Sender
+global CreatorAddress
+==
+return
+main_l7:
+txn Sender
+global CreatorAddress
+==
+return
+main_l8:
+txn ApplicationID
+int 0
+==
+assert
+int 1
+return

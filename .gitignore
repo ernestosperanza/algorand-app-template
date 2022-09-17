@@ -1,0 +1,8 @@
+.DS_Store
+pyteal/venv/
+teal-testing-example/node_modules/
+node_modules/
+sandbox/
+__pycache__/
+.vscode/
+.app_id
