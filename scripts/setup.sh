@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "$(tput setaf 2)Seting up 🚀$(tput setaf 7)"
+echo "$(tput setaf 2)Setting up 🚀$(tput setaf 7)"
 echo ""
 
 if [ ! -d "pyteal/venv" ]; 
 then
-    echo "$(tput setaf 2)Seting up the pyteal environment...$(tput setaf 7)"
+    echo "$(tput setaf 2)Setting up the pyteal environment...$(tput setaf 7)"
     cd pyteal
     python3 -m venv venv
     source venv/bin/activate
@@ -16,9 +16,9 @@ fi
 if [ ! -d "node_modules" ]; 
 then
     echo ""
-    echo "$(tput setaf 2)Seting up the node environment...$(tput setaf 7)"
+    echo "$(tput setaf 2)Setting up the node environment...$(tput setaf 7)"
     echo ""
-    npm install
+    yarn
 fi
 
 if [ ! -d "./sandbox" ]
