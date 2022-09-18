@@ -1,7 +1,7 @@
 # App Algorand Template
 
 ## Setup and Workflow
-
+⚠️ PyTeal requires Python version >= 3.10.
 1. Make sure you have Python, Pip3, Node.js and Docker installed
 2. Run `yarn setup`
 3. The sandbox might not start correctly, if not, start docker and then run `./sandbox up dev`
